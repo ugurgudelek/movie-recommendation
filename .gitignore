@@ -1,2 +1,7 @@
 
 *.driveupload
+*.iml
+*.xml
+*.xml
+*.ini
+*.pyc
