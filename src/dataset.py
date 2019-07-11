@@ -15,28 +15,28 @@ class MovieLens:
         # The last 19 fields are the genres, a 1 indicates the movie
         #               is of that genre, a 0 indicates it is not; movies can be in
         #               several genres at once.
-        self.item = pd.read_csv(os.path.join(BASEPATH, "u.item"), sep='|', header=None, index_col=0,
+        self.items = pd.read_csv(os.path.join(BASEPATH, "u.item"), sep='|', header=None, index_col=0,
                                 names=["movie id", "movie title", "release date", "video release date",
                                        "IMDb URL", "unknown", "Action", "Adventure", "Animation",
                                        "Children's", "Comedy", "Crime", "Documentary", "Drama", "Fantasy",
                                        "Film-Noir", "Horror", "Musical", "Mystery", "Romance", "Sci-Fi",
                                        "Thriller", "War", "Western"], encoding="ISO-8859-1")
 
-        self.genre = pd.read_csv(os.path.join(BASEPATH, "u.genre"), sep='|', header=None)
+        self.genres = pd.read_csv(os.path.join(BASEPATH, "u.genre"), sep='|', header=None)
 
-        self.user = pd.read_csv(os.path.join(BASEPATH, "u.user"), sep='|', header=None,
+        self.users = pd.read_csv(os.path.join(BASEPATH, "u.user"), sep='|', header=None,
                                 names=["user id", "age", "gender", "occupation", "zip code"])
 
-        self.occupation = pd.read_csv(os.path.join(BASEPATH, "u.occupation"), sep='|', header=None)
+        self.occupations = pd.read_csv(os.path.join(BASEPATH, "u.occupation"), sep='|', header=None)
 
     def top_movies(self, n=5):
         top_n_movies_id = self.data[['item id', 'rating']].groupby(by='item id').mean().sort_values(by=['rating'], ascending=False).index.values[:n]
-        return self.item.loc[top_n_movies_id, :]
+        return self.items.loc[top_n_movies_id, :]
 
 mv = MovieLens()
 # print(mv.data.head())
 # print(mv.info.head())
-print(mv.item.head())
+print(mv.items.head())
 # print(mv.genre.head())
 # print(mv.user.head())
 # print(mv.occupation.head())
