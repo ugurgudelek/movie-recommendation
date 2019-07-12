@@ -42,7 +42,7 @@ mv = MovieLens()
 # print(mv.user.head())
 # print(mv.occupation.head())
 #print(mv.top_movies())
-
+np.random.seed(42)
 index=list(mv.data['user id'].unique())
 columns=list(mv.data['item id'].unique())
 index=sorted(index)
