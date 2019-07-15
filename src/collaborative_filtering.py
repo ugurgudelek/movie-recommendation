@@ -61,26 +61,26 @@ class AEAlgorithm(AlgoBase):
 
 
 
-#
-np.random.seed(42)
+if __name__=="__main__":
+    np.random.seed(42)
 
-# The columns must correspond to user id, item id and ratings (in that order).
-# A reader is still needed but only the rating_scale param is requiered.
-data = Dataset.load_from_df(MovieLens().to_surprise(), Reader(rating_scale=(1, 5)))
+    # The columns must correspond to user id, item id and ratings (in that order).
+    # A reader is still needed but only the rating_scale param is requiered.
+    data = Dataset.load_from_df(MovieLens().to_surprise(), Reader(rating_scale=(1, 5)))
 
-# sample random trainset and testset
-# test set is made of 25% of the ratings.
-trainset, testset = train_test_split(data, test_size=.25)
+    # sample random trainset and testset
+    # test set is made of 25% of the ratings.
+    trainset, testset = train_test_split(data, test_size=.25)
 
-# We'll use the famous SVD algorithm.
-# algo = SVD()
-# algo = SVDpp()
-# algo = MeanAlgorithm()
-algo = AEAlgorithm()
+    # We'll use the famous SVD algorithm.
+    # algo = SVD()
+    # algo = SVDpp()
+    # algo = MeanAlgorithm()
+    algo = AEAlgorithm()
 
-# Train the algorithm on the trainset, and predict ratings for the testset
-algo.fit(trainset)
-predictions = algo.test(testset, verbose=False)
+    # Train the algorithm on the trainset, and predict ratings for the testset
+    algo.fit(trainset)
+    predictions = algo.test(testset, verbose=False)
 
-# Then compute RMSE
-accuracy.rmse(predictions)
+    # Then compute RMSE
+    accuracy.rmse(predictions)
