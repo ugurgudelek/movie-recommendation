@@ -1,3 +1,6 @@
+__author__ = "Ugur Gudelek"
+__email__ = "ugurgudelek@gmail.com"
+
 from sklearn.manifold import TSNE
 from torchvision.datasets import MNIST
 

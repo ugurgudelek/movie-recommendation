@@ -1,3 +1,6 @@
+__author__ = "Ugur Gudelek"
+__email__ = "ugurgudelek@gmail.com"
+
 from torchvision import transforms
 from torchvision.utils import save_image
 
