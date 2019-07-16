@@ -114,13 +114,14 @@ class MovieLens:
 if __name__ == "__main__":
     np.random.seed(42)
     mv = MovieLens()
-    mv.create_cold_start_items(n_ratings_threshold=50)
-    ccs_item = mv.ccs_items().__next__()
-    print(mv.is_ccs(ccs_item))
-    print(mv.rated_ncs_items(1))
-    mv.pick_random_user()
-    mv.append_rating(-1, -2, -3)
-    print(mv.data.tail())
+    # mv.create_cold_start_items(n_ratings_threshold=50)
+    # ccs_item = mv.ccs_items().__next__()
+    # print(mv.is_ccs(ccs_item))
+    # print(mv.rated_ncs_items(1))
+    # mv.pick_random_user()
+    # mv.append_rating(-1, -2, -3)
+    # print(mv.data.tail())
+
 
     # print(mv.data.head())
     # print(mv.info.head())

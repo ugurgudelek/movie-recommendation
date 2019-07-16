@@ -73,10 +73,10 @@ if __name__=="__main__":
     trainset, testset = train_test_split(data, test_size=.25)
 
     # We'll use the famous SVD algorithm.
-    # algo = SVD()
+    algo = SVD()
     # algo = SVDpp()
     # algo = MeanAlgorithm()
-    algo = AEAlgorithm()
+    # algo = AEAlgorithm()
 
     # Train the algorithm on the trainset, and predict ratings for the testset
     algo.fit(trainset)
