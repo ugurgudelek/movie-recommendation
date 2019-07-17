@@ -3,10 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="a1e36d4d-f5be-48bb-a342-73a81dab9fc6" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/results/results.xlsx" beforeDir="false" afterPath="$PROJECT_DIR$/results/results.xlsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/collaborative_filtering.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/collaborative_filtering.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/dataset.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/dataset.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/main.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -18,7 +14,7 @@
     <SUITE FILE_PATH="coverage/movie_recommendation$autoencoder.coverage" NAME="autoencoder Coverage Results" MODIFIED="1562855950362" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/src" />
     <SUITE FILE_PATH="coverage/movie_recommendation$collaborative_filtering.coverage" NAME="collaborative_filtering Coverage Results" MODIFIED="1563288564803" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/src" />
     <SUITE FILE_PATH="coverage/movie_recommendation$tsne.coverage" NAME="tsne Coverage Results" MODIFIED="1562855384105" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/src" />
-    <SUITE FILE_PATH="coverage/movie_recommendation$main__1_.coverage" NAME="main (1) Coverage Results" MODIFIED="1563293884631" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/src" />
+    <SUITE FILE_PATH="coverage/movie_recommendation$main__1_.coverage" NAME="main (1) Coverage Results" MODIFIED="1563378283651" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/src" />
     <SUITE FILE_PATH="coverage/movie_recommendation$main.coverage" NAME="main Coverage Results" MODIFIED="1560352327342" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/src" />
     <SUITE FILE_PATH="coverage/movie_recommendation$dataset.coverage" NAME="dataset Coverage Results" MODIFIED="1562936866745" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/src" />
   </component>
@@ -26,11 +22,12 @@
     <session id="236166654">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="1" />
+          <entry key="project.closed" value="3" />
           <entry key="project.open.time.0" value="1" />
           <entry key="project.open.time.1" value="1" />
+          <entry key="project.open.time.5" value="1" />
           <entry key="project.open.time.8" value="1" />
-          <entry key="project.opened" value="3" />
+          <entry key="project.opened" value="4" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
@@ -49,14 +46,14 @@
         <counts>
           <entry key="dummy" value="7" />
           <entry key="md" value="34" />
-          <entry key="py" value="3397" />
+          <entry key="py" value="3552" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
           <entry key="Markdown" value="34" />
           <entry key="PLAIN_TEXT" value="7" />
-          <entry key="Python" value="3397" />
+          <entry key="Python" value="3552" />
         </counts>
       </usages-collector>
     </session>
@@ -66,8 +63,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/dataset.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="740">
-              <caret line="37" selection-start-line="37" selection-end-line="37" />
+            <state relative-caret-position="533">
+              <caret line="61" column="8" selection-start-line="61" selection-start-column="8" selection-end-line="61" selection-end-column="75" />
               <folding>
                 <element signature="e#65#84#0" expanded="true" />
               </folding>
@@ -78,8 +75,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="967">
-              <caret line="89" selection-start-line="89" selection-end-line="89" />
+            <state relative-caret-position="287">
+              <caret line="46" column="23" lean-forward="true" selection-start-line="46" selection-start-column="23" selection-end-line="46" selection-end-column="23" />
               <folding>
                 <element signature="e#541#553#0" expanded="true" />
               </folding>
@@ -90,8 +87,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/autoencoder.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="360">
-              <caret line="39" column="16" lean-forward="true" selection-start-line="39" selection-start-column="16" selection-end-line="39" selection-end-column="16" />
+            <state relative-caret-position="500">
+              <caret line="39" column="16" selection-start-line="39" selection-start-column="16" selection-end-line="39" selection-end-column="16" />
               <folding>
                 <element signature="e#65#77#0" expanded="true" />
               </folding>
@@ -111,7 +108,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/tsne.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="780">
+            <state relative-caret-position="540">
               <caret line="39" selection-start-line="39" selection-end-line="39" />
               <folding>
                 <element signature="e#65#98#0" expanded="true" />
@@ -368,7 +365,7 @@
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
       <window_info anchor="bottom" id="Run" order="2" weight="0.329718" />
-      <window_info active="true" anchor="bottom" id="Debug" order="3" visible="true" weight="0.33654937" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.33654937" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
@@ -381,7 +378,7 @@
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
-      <window_info anchor="right" id="SciView" order="3" visible="true" weight="0.5666023" />
+      <window_info anchor="right" id="SciView" order="3" weight="0.5666023" />
       <window_info anchor="right" id="Database" order="4" />
     </layout>
   </component>
@@ -405,73 +402,72 @@
           <option name="timeStamp" value="5" />
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/src/main.py</url>
+          <line>48</line>
+          <option name="timeStamp" value="7" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
           <url>file://$PROJECT_DIR$/src/dataset.py</url>
-          <line>37</line>
-          <option name="timeStamp" value="6" />
+          <line>61</line>
+          <option name="timeStamp" value="8" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
     <watches-manager>
       <configuration name="PythonConfigurationType">
-        <watch expression="data.global_mean" language="Python" />
-        <watch expression="data.global_mean" language="Python" />
-        <watch expression="testset.global_mean" language="Python" />
-        <watch expression="np.array([r for _,_,r in testset]).mean()" language="Python" />
-        <watch expression="trainset.global_mean" language="Python" />
-        <watch expression="print(self.items.describe())" language="Python" />
-        <watch expression="self.items['mean_rating'].mean()" language="Python" />
+        <watch expression="self.data.loc[self.data['itemID'].isin(self.ncs_itemIDs), 'rating'].count()/self.ncs_itemIDs.shape[0]" language="Python" />
       </configuration>
     </watches-manager>
   </component>
   <component name="debuggerHistoryManager">
     <expressions id="watch">
       <expression>
-        <expression-string>self.items['mean_rating'].mean()</expression-string>
+        <expression-string>self.data.loc[self.data['itemID'].isin(self.ncs_itemIDs), 'rating'].count()/self.ncs_itemIDs.shape[0]</expression-string>
         <language-id>Python</language-id>
         <evaluation-mode>EXPRESSION</evaluation-mode>
       </expression>
       <expression>
-        <expression-string>self.items</expression-string>
+        <expression-string>self.data.loc[self.data['itemID'].isin(self.ccs_itemIDs), 'rating'].count()/self.ccs_itemIDs.shape[0]</expression-string>
         <language-id>Python</language-id>
         <evaluation-mode>EXPRESSION</evaluation-mode>
       </expression>
       <expression>
-        <expression-string>print(self.items.describe())</expression-string>
+        <expression-string>self.data.loc[self.data['itemID'].isin(self.ccs_itemIDs), 'rating'].count()</expression-string>
         <language-id>Python</language-id>
         <evaluation-mode>EXPRESSION</evaluation-mode>
       </expression>
       <expression>
-        <expression-string>self.items.describe()</expression-string>
+        <expression-string>self.data.loc[self.data['itemID'].isin(self.ccs_itemIDs), 'userID'].unique().shape</expression-string>
         <language-id>Python</language-id>
         <evaluation-mode>EXPRESSION</evaluation-mode>
       </expression>
       <expression>
-        <expression-string>trainset.global_mean</expression-string>
+        <expression-string>self.data.loc[self.data['itemID'].isin(self.ncs_itemIDs), 'userID'].unique().shape</expression-string>
         <language-id>Python</language-id>
         <evaluation-mode>EXPRESSION</evaluation-mode>
       </expression>
       <expression>
-        <expression-string>np.array([r for _,_,r in testset]).mean()</expression-string>
+        <expression-string>self.data.loc[self.data['itemID'].isin(self.ncs_itemIDs), 'itemID'].unique().shape</expression-string>
         <language-id>Python</language-id>
         <evaluation-mode>EXPRESSION</evaluation-mode>
       </expression>
       <expression>
-        <expression-string>[r for _,_,r in testset]</expression-string>
+        <expression-string>self.data.loc[self.data['itemID'].isin(self.ccs_itemIDs), 'itemID'].unique().shape</expression-string>
         <language-id>Python</language-id>
         <evaluation-mode>EXPRESSION</evaluation-mode>
       </expression>
       <expression>
-        <expression-string>testset.global_mean</expression-string>
+        <expression-string>self.data.loc[self.data['itemID'].isin(self.ccs_itemIDs), 'itemID'].unique().count()</expression-string>
         <language-id>Python</language-id>
         <evaluation-mode>EXPRESSION</evaluation-mode>
       </expression>
       <expression>
-        <expression-string>data.global_mean</expression-string>
+        <expression-string>self.data.loc[self.data['itemID'].isin(self.ccs_itemIDs), 'itemID'].unique()</expression-string>
         <language-id>Python</language-id>
         <evaluation-mode>EXPRESSION</evaluation-mode>
       </expression>
       <expression>
-        <expression-string>_.numpy()</expression-string>
+        <expression-string>self.data.loc[self.data['itemID'].isin(self.ncs_itemIDs), 'rating'].count()</expression-string>
         <language-id>Python</language-id>
         <evaluation-mode>EXPRESSION</evaluation-mode>
       </expression>
@@ -505,19 +501,12 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/lol.py" />
-    <entry file="file://$PROJECT_DIR$/src/utils.py">
+    <entry file="file://$PROJECT_DIR$/src/autoencoder.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="320">
-          <caret line="20" selection-start-line="20" selection-end-line="20" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/tsne.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="780">
-          <caret line="39" selection-start-line="39" selection-end-line="39" />
+        <state relative-caret-position="500">
+          <caret line="39" column="16" selection-start-line="39" selection-start-column="16" selection-end-line="39" selection-end-column="16" />
           <folding>
-            <element signature="e#65#98#0" expanded="true" />
+            <element signature="e#65#77#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -529,20 +518,27 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/autoencoder.py">
+    <entry file="file://$PROJECT_DIR$/src/tsne.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="360">
-          <caret line="39" column="16" lean-forward="true" selection-start-line="39" selection-start-column="16" selection-end-line="39" selection-end-column="16" />
+        <state relative-caret-position="540">
+          <caret line="39" selection-start-line="39" selection-end-line="39" />
           <folding>
-            <element signature="e#65#77#0" expanded="true" />
+            <element signature="e#65#98#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/utils.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="320">
+          <caret line="20" selection-start-line="20" selection-end-line="20" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="967">
-          <caret line="89" selection-start-line="89" selection-end-line="89" />
+        <state relative-caret-position="287">
+          <caret line="46" column="23" lean-forward="true" selection-start-line="46" selection-start-column="23" selection-end-line="46" selection-end-column="23" />
           <folding>
             <element signature="e#541#553#0" expanded="true" />
           </folding>
@@ -551,8 +547,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/dataset.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="740">
-          <caret line="37" selection-start-line="37" selection-end-line="37" />
+        <state relative-caret-position="533">
+          <caret line="61" column="8" selection-start-line="61" selection-start-column="8" selection-end-line="61" selection-end-column="75" />
           <folding>
             <element signature="e#65#84#0" expanded="true" />
           </folding>
