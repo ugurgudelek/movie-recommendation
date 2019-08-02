@@ -8,6 +8,37 @@ import numpy as np
 import torch
 
 
+class Netflix:
+
+    def __init__(self):
+        BASEPATH = "../data/netflix"
+
+        self.raw_data: pd.DataFrame = pd.read_csv(os.path.join(BASEPATH, "combined_data_1.txt"), sep=',', header=None,
+                                                  names=["userID", "rating", "timestamp"])
+
+        df_nan = pd.DataFrame(pd.isnull(self.raw_data['rating']))
+        df_nan = df_nan[df_nan['rating'] == True]
+        df_nan = df_nan.reset_index()
+
+        movie_np = []
+        movie_id = 1
+
+        for i, j in zip(df_nan['index'][1:], df_nan['index'][:-1]):
+            # numpy approach
+            temp = np.full((1, i - j - 1), movie_id)
+            movie_np = np.append(movie_np, temp)
+            movie_id += 1
+
+        # Account for last record and corresponding length
+        # numpy approach
+        last_record = np.full((1, len(self.raw_data) - df_nan.iloc[-1, 0] - 1), movie_id)
+        movie_np = np.append(movie_np, last_record)
+
+        self.raw_data = self.raw_data[pd.notnull(self.raw_data['rating'])]
+
+        self.raw_data['itemID'] = movie_np.astype(int)
+        print()
+
 class MovieLens:
 
     def __init__(self):
@@ -113,7 +144,8 @@ class MovieLens:
 
 if __name__ == "__main__":
     np.random.seed(42)
-    mv = MovieLens()
+    # mv = MovieLens()
+    mv = Netflix()
     # mv.create_cold_start_items(n_ratings_threshold=50)
     # ccs_item = mv.ccs_items().__next__()
     # print(mv.is_ccs(ccs_item))
