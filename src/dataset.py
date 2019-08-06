@@ -78,8 +78,7 @@ class MovieLens:
 
     def top_movies(self, n=5):
         top_n_movies_id = self.data[['itemID', 'rating']].groupby(by='itemID').mean().sort_values(by=['rating'],
-                                                                                                  ascending=False).index.values[
-                          :n]
+                                                                                                  ascending=False).index.values[:n]
         return self.items.loc[top_n_movies_id, :]
 
     def create_cold_start_items(self, n_ratings_threshold):

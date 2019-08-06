@@ -32,25 +32,22 @@ from collaborative_filtering import MeanAlgorithm
 
 import numpy as np
 from scipy.spatial.distance import cosine
-# from tqdm import tqdm
+from tqdm import tqdm
 import pandas as pd
 import os
 
 OUTPUT_PATH = '../output'
 os.makedirs(OUTPUT_PATH, exist_ok=True)
 
-num_epochs = 100
-batch_size = 20
-learning_rate = 1e-3
-
-mv = MovieLens()
-mv.create_cold_start_items(n_ratings_threshold=5)
-
-dataloader = DataLoader(mv, batch_size=batch_size, shuffle=True, drop_last=True)
-
-
+# num_epochs = 100
+# batch_size = 20
+# learning_rate = 1e-3
 #
-model = AutoEncoder(input_dim=21, latent_dim=5)
+# mv = MovieLens()
+# mv.create_cold_start_items(n_ratings_threshold=5)
+#
+# dataloader = DataLoader(mv, batch_size=batch_size, shuffle=True, drop_last=True)
+# model = AutoEncoder(input_dim=21, latent_dim=5)
 # criterion = nn.MSELoss()
 # optimizer = torch.optim.Adam(model.parameters(), lr=learning_rate, weight_decay=1e-5)
 # AutoEncoder.fit(model, num_epochs, dataloader, criterion, optimizer)
@@ -90,7 +87,7 @@ def run(data):
     algo = KNNBasic()
     algo.fit(trainset)
     predictions = algo.test(testset, verbose=False)
-
+    print('\n'.join(map(str, predictions[:10])))
     acc = accuracy.rmse(predictions)
     return acc
 
